@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-header{
+    background:linear-gradient(0deg,#FD6E6A,#FFC600);
+}
+
+.main-header .container{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main-header .logo{
+    width: 181px;
+    height: 44px;
+}
+
+.main-header .logo img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.main-header .main-nav{
+    margin: auto;
+}
+
+.main-header .main-nav a{
+    text-decoration: none;
+    padding: 5px 3em;
+    font-size: 20px;
+    color: black;
+    position: relative;
+}
+
+.main-header .main-nav a:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: -5px;
+    height: 0;
+    border-bottom: 2px solid white;
+    transition: .3s;
+}
+
+.main-header .main-nav a:hover:after{
+    left: 0;
+    right: 0;
+}
+
+.main-header .main-nav a:hover{
+    transform: translateY(-5px);
+    background-color:papayawhip;
+    font-weight:bold;
+    border-radius: 70px; 
+}
+
+html,body{
+    height: 95%;
+}
+
+.mid{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url("https://sean334470.weebly.com/uploads/1/1/3/3/113359359/1_4_orig.jpg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position: center;
+    background-size:cover
+}
+
+.login{
+    margin: auto;
+    width: 600px;
+    height: 450px;
+    background-color: rgb(0, 0, 0, .5);
+    border-radius: 10px;
+    border: 10px solid #fff;
+    box-shadow: 0 0 30px #000;
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    color: #fff;
+}
+
+form h2{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+form .group{
+    margin-bottom: 20px;
+}
+
+form label{
+    font-weight:bold;
+    line-height: 2;
+}
+
+form input{
+    width: 100%;
+    border: 2px solid #aaa;
+    line-height: 2;
+    border-radius: 5px;
+}
+
+form .btn-group{
+    font-size: 0;
+    margin-top: 50px;
+}
+
+form .btn{
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: papayawhip;
+    width: 190px;
+    padding: 10px 0;
+    font-weight:bold;
+}
+
+form .btn + .btn{
+    margin-left: 20px;
+}
